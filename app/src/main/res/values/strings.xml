@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">TirtaAgung</string>
+    <string name="e_tira">E-TIRA</string>
+    <string name="sign_in">Sign in</string>
+    <string name="forgot_pass"><u>Forgot Password?</u></string>
+    <string name="don_t_have_">Don\'t have an account?</string>
+    <string name="register_now"><u>Register Now!</u></string>
+    <string name="register">Register</string>
+    <string name="you_have_account">You have account?</string>
+    <string name="login"><u>Sign in</u></string>
+</resources>

@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/back_grey"
+    tools:context=".activity.RegisterActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="16dp">
+
+            <!-- Sign in -->
+            <TextView
+                android:id="@+id/register"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="16dp"
+                android:text="@string/register"
+                android:fontFamily="sans-serif"
+                android:textAppearance="@style/sign_in"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/logo"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="16dp"
+                android:src="@drawable/logo_tirta_agung"
+                app:layout_constraintEnd_toEndOf="@+id/register"
+                app:layout_constraintStart_toStartOf="@+id/register"
+                app:layout_constraintTop_toBottomOf="@+id/register" />
+
+            <!-- Rectangle 1 -->
+            <View
+                android:id="@+id/rectangle_1"
+                android:layout_width="320dp"
+                android:layout_height="50dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="24dp"
+                android:background="@drawable/rectangle_1"
+                android:elevation="4dp"
+                app:layout_constraintEnd_toEndOf="@+id/logo"
+                app:layout_constraintHorizontal_bias="0.502"
+                app:layout_constraintStart_toStartOf="@+id/logo"
+                app:layout_constraintTop_toBottomOf="@+id/logo" />
+
+            <EditText
+                android:id="@+id/edt_nama_lengkap_register"
+                android:layout_width="280dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="24dp"
+                android:fontFamily="@font/montserrat_regular"
+                android:hint="nama lengkap"
+                android:textSize="18sp"
+                android:textAlignment="viewStart"
+                android:background="@color/transparan"
+                app:layout_constraintEnd_toEndOf="@+id/logo"
+                app:layout_constraintStart_toStartOf="@+id/logo"
+                app:layout_constraintTop_toBottomOf="@+id/logo"
+                android:drawableLeft="@drawable/ic_user"
+                android:drawablePadding="16dp"
+                />
+
+            <!-- Rectangle 2 -->
+            <View
+                android:id="@+id/rectangle_2"
+                android:layout_width="320dp"
+                android:layout_height="50dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/rectangle_1"
+                android:elevation="4dp"
+                app:layout_constraintEnd_toEndOf="@+id/logo"
+                app:layout_constraintHorizontal_bias="0.502"
+                app:layout_constraintStart_toStartOf="@+id/logo"
+                app:layout_constraintTop_toBottomOf="@+id/edt_nama_lengkap_register" />
+
+            <EditText
+                android:id="@+id/edt_nomor_hp_register"
+                android:layout_width="280dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="12dp"
+                android:fontFamily="@font/montserrat_regular"
+                android:hint="no.hp / whatsapp"
+                android:textSize="18sp"
+                android:textAlignment="viewStart"
+                android:background="@color/transparan"
+                app:layout_constraintEnd_toEndOf="@+id/logo"
+                app:layout_constraintStart_toStartOf="@+id/logo"
+                app:layout_constraintTop_toBottomOf="@+id/edt_nama_lengkap_register"
+                android:drawableLeft="@drawable/ic_phone"
+                android:drawablePadding="16dp"
+                />
+
+            <!-- Rectangle 3 -->
+            <View
+                android:id="@+id/rectangle_3"
+                android:layout_width="320dp"
+                android:layout_height="50dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/rectangle_1"
+                android:elevation="4dp"
+                app:layout_constraintEnd_toEndOf="@+id/logo"
+                app:layout_constraintHorizontal_bias="0.502"
+                app:layout_constraintStart_toStartOf="@+id/logo"
+                app:layout_constraintTop_toBottomOf="@+id/edt_nomor_hp_register" />
+
+            <EditText
+                android:id="@+id/edt_email_register"
+                android:layout_width="280dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="12dp"
+                android:fontFamily="@font/montserrat_regular"
+                android:hint="email / username"
+                android:textSize="18sp"
+                android:textAlignment="viewStart"
+                android:background="@color/transparan"
+                app:layout_constraintEnd_toEndOf="@+id/logo"
+                app:layout_constraintStart_toStartOf="@+id/logo"
+                app:layout_constraintTop_toBottomOf="@+id/edt_nomor_hp_register"
+                android:drawableLeft="@drawable/ic_user"
+                android:drawablePadding="16dp"
+                />
+
+            <!-- Rectangle 4 -->
+            <View
+                android:id="@+id/rectangle_4"
+                android:layout_width="320dp"
+                android:layout_height="50dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/rectangle_1"
+                android:elevation="4dp"
+                app:layout_constraintEnd_toEndOf="@+id/logo"
+                app:layout_constraintHorizontal_bias="0.502"
+                app:layout_constraintStart_toStartOf="@+id/logo"
+                app:layout_constraintTop_toBottomOf="@+id/edt_email_register" />
+
+            <EditText
+                android:id="@+id/edt_password_register"
+                android:layout_width="280dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="12dp"
+                android:fontFamily="@font/montserrat_regular"
+                android:hint="password"
+                android:inputType="textPassword"
+                android:textSize="18sp"
+                android:textAlignment="viewStart"
+                android:background="@color/transparan"
+                app:layout_constraintEnd_toEndOf="@+id/logo"
+                app:layout_constraintStart_toStartOf="@+id/logo"
+                app:layout_constraintTop_toBottomOf="@+id/edt_email_register"
+                android:drawableLeft="@drawable/ic_lock"
+                android:drawablePadding="16dp"
+                />
+
+            <ImageButton
+                android:onClick="actionViewHidePassword"
+                android:id="@+id/img_btn_view_hide_password"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/transparan"
+                android:src="@drawable/ic_hide_pass"
+                app:layout_constraintBottom_toBottomOf="@+id/edt_password_register"
+                app:layout_constraintEnd_toEndOf="@+id/edt_password_register"
+                app:layout_constraintTop_toTopOf="@+id/rectangle_4" />
+
+            <!-- Rectangle 5 -->
+            <View
+                android:id="@+id/rectangle_5"
+                android:layout_width="320dp"
+                android:layout_height="50dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/rectangle_1"
+                android:elevation="4dp"
+                app:layout_constraintEnd_toEndOf="@+id/logo"
+                app:layout_constraintHorizontal_bias="0.502"
+                app:layout_constraintStart_toStartOf="@+id/logo"
+                app:layout_constraintTop_toBottomOf="@+id/edt_password_register" />
+
+            <EditText
+                android:id="@+id/edt_confirm_password_register"
+                android:layout_width="280dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="12dp"
+                android:fontFamily="@font/montserrat_regular"
+                android:hint="confirm password"
+                android:inputType="textPassword"
+                android:textSize="18sp"
+                android:textAlignment="viewStart"
+                android:background="@color/transparan"
+                app:layout_constraintEnd_toEndOf="@+id/logo"
+                app:layout_constraintStart_toStartOf="@+id/logo"
+                app:layout_constraintTop_toBottomOf="@+id/edt_password_register"
+                android:drawableLeft="@drawable/ic_lock"
+                android:drawablePadding="16dp"
+                />
+
+            <ImageButton
+                android:onClick="actionViewHideConfirmPassword"
+                android:id="@+id/img_btn_view_hide_confirm_password"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/transparan"
+                android:src="@drawable/ic_hide_pass"
+                app:layout_constraintBottom_toBottomOf="@+id/edt_confirm_password_register"
+                app:layout_constraintEnd_toEndOf="@+id/edt_confirm_password_register"
+                app:layout_constraintTop_toTopOf="@+id/rectangle_5" />
+
+            <!-- Rectangle 6 -->
+            <View
+                android:id="@+id/rectangle_6"
+                android:onClick="actionRegister"
+                android:layout_width="320dp"
+                android:layout_height="50dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="24dp"
+                android:background="@drawable/rectangle_3"
+                app:layout_constraintEnd_toEndOf="@+id/rectangle_5"
+                app:layout_constraintStart_toStartOf="@+id/rectangle_5"
+                app:layout_constraintTop_toBottomOf="@+id/rectangle_5" />
+
+            <TextView
+                android:onClick="actionRegister"
+                android:id="@+id/txt_register_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserrat_bold"
+                android:text="Register"
+                android:textColor="@color/white"
+                android:textSize="24sp"
+                app:layout_constraintBottom_toBottomOf="@+id/rectangle_6"
+                app:layout_constraintEnd_toEndOf="@+id/rectangle_6"
+                app:layout_constraintStart_toStartOf="@+id/rectangle_6"
+                app:layout_constraintTop_toTopOf="@+id/rectangle_6" />
+
+            <!-- You have account? Sign in -->
+            <TextView
+                android:id="@+id/you_have"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="40dp"
+                android:gravity="center_horizontal|center_vertical"
+                android:text="@string/you_have_account"
+                android:textAppearance="@style/forgot_pass_and_register"
+                app:layout_constraintEnd_toEndOf="@+id/rectangle_6"
+                app:layout_constraintStart_toStartOf="@+id/rectangle_6"
+                app:layout_constraintTop_toBottomOf="@+id/rectangle_6" />
+
+            <TextView
+                android:id="@+id/login"
+                android:onClick="actionToLogin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:gravity="center_horizontal|center_vertical"
+                android:text="@string/login"
+                android:textColor="#062993"
+                android:textAppearance="@style/forgot_pass_and_register"
+                app:layout_constraintEnd_toEndOf="@+id/edt_confirm_password_register"
+                app:layout_constraintStart_toStartOf="@+id/edt_confirm_password_register"
+                app:layout_constraintTop_toBottomOf="@+id/you_have" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
